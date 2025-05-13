@@ -2,18 +2,30 @@ using UnityEngine;
 
 public class WeaponScript
 {
-    public string weaponName;
-    public int damage;
+    private string weaponName;
+    private int damage;
 
-    public WeaponScript ( string name, int dmg )
+    public WeaponScript(string name, int dmg)
     {
         weaponName = name;
         damage = dmg;
     }
 
-    public void PrintInfo()
+    public int GetDamage()
     {
-        UnityEngine.Debug.Log("Weapon: " + weaponName + ", Damage: " + damage);
+        return damage;
     }
 
+    public string GetWeaponName()
+    {
+        return weaponName;
+    }
+
+    public void SetDamage(int newDamage)
+    {
+        if (newDamage > 0)
+        {
+            damage = newDamage;
+        }
+    }
 }
