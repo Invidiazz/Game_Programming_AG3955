@@ -2,13 +2,18 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+
+    public void AnnouncePlayer()
+    {
+        Debug.Log("Player is in the game");   //I mean I think we know what it does
+    }
+
     void Start()
     {
         
     }
 
-    // Update is called once per frame
+
     void Update()
     {
         

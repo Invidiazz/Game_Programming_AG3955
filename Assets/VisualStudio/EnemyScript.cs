@@ -9,7 +9,7 @@ public class EnemyScript : MonoBehaviour
     {
         if (player != null)
         {
-            player.TakeDamage(damage);
+            player.TakeDamage(damage);     //cause player damage
         }
     }
 }
