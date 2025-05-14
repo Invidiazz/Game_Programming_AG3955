@@ -10,12 +10,16 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        
-    }
+        EntityBase[] allEntities = FindObjectsOfType<EntityBase>();
 
+        foreach (EntityBase entity in allEntities)
+        {
+            entity.TakeDamage(15);  //all objects custom dmg
+        }
+    }
 
     void Update()
-    {
-        
-    }
+    {}
 }
+
+//warnings beware, I will ghost you harder than the 17 african princes in my email
