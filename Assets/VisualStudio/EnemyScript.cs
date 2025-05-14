@@ -31,5 +31,11 @@ public class EnemyScript : EntityBase
             hasSpoken = true;
         }
     } //now mom is only stolen once, yey!
+
+    public void ReactToPlayer()
+    {
+        Debug.Log("Thy foe has spotted ya");
+        Speak();
+    }
 }
 
